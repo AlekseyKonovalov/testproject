@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@+id/applicationsListFragment">
+
+    <fragment
+        android:id="@+id/applicationsListFragment"
+        android:name="com.alekseykon.testproject.presentation.fragments.applicationsList.ItemsListFragment"
+        android:label="ApplicationsListFragment" />
+
+    <fragment
+        android:id="@+id/additionalFragment"
+        android:name="com.alekseykon.testproject.presentation.fragments.additional.AdditionalFragment"
+        android:label="AdditionalFragment">
+        <action
+            android:id="@+id/action_additionalFragment_to_requisitesFragment"
+            app:destination="@id/requisitesFragment" />
+        <action
+            android:id="@+id/action_additionalFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment" />
+        <action
+            android:id="@+id/action_additionalFragment_to_supportInfoFragment2"
+            app:destination="@id/supportInfoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/requisitesFragment"
+        android:name="com.alekseykon.testproject.presentation.fragments.requisites.RequisitesFragment"
+        android:label="RequisitesFragment" />
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.alekseykon.testproject.presentation.fragments.instructions.InstructionsFragment"
+        android:label="InstructionsFragment" />
+    <fragment
+        android:id="@+id/supportInfoFragment2"
+        android:name="com.alekseykon.testproject.presentation.fragments.supportInfo.SupportInfoFragment"
+        android:label="SupportInfoFragment" />
+
+</navigation>

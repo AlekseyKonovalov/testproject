@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="@dimen/margin_24"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingEnd="@dimen/padding_10"
+                android:paddingBottom="@dimen/padding_10"
+                android:src="@drawable/ic_long_back_arrow"
+                app:layout_constraintBottom_toBottomOf="@id/textTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textTitle" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                style="@style/TextTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_weight="1"
+                android:text="@string/requisites_title"
+                android:textSize="@dimen/text_26"
+                app:layout_constraintStart_toEndOf="@id/backButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/changeButton"
+                style="@style/TextTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_pencil"
+                android:drawablePadding="@dimen/padding_10"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingStart="@dimen/padding_10"
+                android:paddingTop="@dimen/padding_10"
+                android:paddingEnd="@dimen/padding_24"
+                android:paddingBottom="@dimen/padding_10"
+                android:text="@string/requisites_title_change"
+                android:textColor="@color/ship_cove"
+                android:textSize="@dimen/text_16"
+                app:layout_constraintBottom_toBottomOf="@id/textTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textTitle" />
+
+
+            <FrameLayout
+                android:id="@+id/innLayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginEnd="@dimen/margin_24"
+                android:background="@drawable/shape_light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/innTextInput"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_inn_hint"
+                    android:paddingTop="@dimen/padding_2"
+                    android:paddingBottom="@dimen/padding_2"
+                    app:boxStrokeColor="@android:color/transparent"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:errorTextColor="@color/colorAccentRed"
+                    app:hintTextColor="@color/ship_cove">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/innTextEdit"
+                        style="@style/textDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/bikLayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_24"
+                android:background="@drawable/shape_light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/innLayoutText">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bikTextInput"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_bik_hint"
+                    android:paddingTop="@dimen/padding_2"
+                    android:paddingBottom="@dimen/padding_2"
+                    app:boxStrokeColor="@android:color/transparent"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:errorTextColor="@color/colorAccentRed"
+                    app:hintTextColor="@color/ship_cove">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/bikTextEdit"
+                        style="@style/textDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/accountLayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_24"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_24"
+                android:background="@drawable/shape_light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bikLayoutText">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/accountTextInput"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_account_hint"
+                    android:paddingTop="@dimen/padding_2"
+                    android:paddingBottom="@dimen/padding_2"
+                    app:boxStrokeColor="@android:color/transparent"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:hintTextColor="@color/ship_cove">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/accountTextEdit"
+                        style="@style/textDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </FrameLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

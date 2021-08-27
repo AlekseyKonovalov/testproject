@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/TextTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/additional_title"
+            android:textSize="@dimen/text_26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/requisites"
+            style="@style/TextTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingStart="@dimen/padding_24"
+            android:paddingTop="@dimen/padding_16"
+            android:paddingEnd="@dimen/padding_24"
+            android:paddingBottom="@dimen/padding_16"
+            android:text="@string/additional_requisites"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+        <View
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/padding_24"
+            android:background="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/requisites" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/instructions"
+            style="@style/TextTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingStart="@dimen/padding_24"
+            android:paddingTop="@dimen/padding_16"
+            android:paddingEnd="@dimen/padding_24"
+            android:paddingBottom="@dimen/padding_16"
+            android:text="@string/additional_instructions"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/border" />
+
+
+        <View
+            android:id="@+id/border2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/padding_24"
+            android:background="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/instructions" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/support"
+            style="@style/TextTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_forward"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingStart="@dimen/padding_24"
+            android:paddingTop="@dimen/padding_16"
+            android:paddingEnd="@dimen/padding_24"
+            android:paddingBottom="@dimen/padding_16"
+            android:text="@string/additional_support"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/border2" />
+
+
+        <View
+            android:id="@+id/border3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/padding_24"
+            android:background="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/support" />
+
+        <TextView
+            android:id="@+id/textVersion"
+            style="@style/TextSubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_24"
+            android:textColor="@color/ship_cove"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="1.0.1 (22)" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

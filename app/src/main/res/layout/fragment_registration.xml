@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_40"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginEnd="@dimen/margin_40"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textTitle"
+                style="@style/TextTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:text="@string/registration_title"
+                android:textSize="@dimen/text_26"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/textDescription"
+                style="@style/TextSubtitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12"
+                android:text="@string/registration_description"
+                android:textSize="@dimen/text_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+            <FrameLayout
+                android:id="@+id/innLayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:background="@drawable/shape_light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textDescription">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/innTextInput"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_inn_hint"
+                    android:paddingTop="@dimen/padding_2"
+                    android:paddingBottom="@dimen/padding_2"
+                    app:boxStrokeColor="@android:color/transparent"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:errorTextColor="@color/colorAccentRed"
+                    app:hintTextColor="@color/ship_cove">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/innTextEdit"
+                        style="@style/textDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/bikLayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/shape_light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/innLayoutText">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bikTextInput"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_bik_hint"
+                    android:paddingTop="@dimen/padding_2"
+                    android:paddingBottom="@dimen/padding_2"
+                    app:boxStrokeColor="@android:color/transparent"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:errorTextColor="@color/colorAccentRed"
+                    app:hintTextColor="@color/ship_cove">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/bikTextEdit"
+                        style="@style/textDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/accountLayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@drawable/shape_light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bikLayoutText">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/accountTextInput"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_account_hint"
+                    android:paddingTop="@dimen/padding_2"
+                    android:paddingBottom="@dimen/padding_2"
+                    app:boxStrokeColor="@android:color/transparent"
+                    app:boxStrokeWidth="0dp"
+                    app:boxStrokeWidthFocused="0dp"
+                    app:errorTextColor="@color/colorAccentRed"
+                    app:hintTextColor="@color/ship_cove">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/accountTextEdit"
+                        style="@style/textDefault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/checkboxAgreementLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accountLayoutText">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkboxAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    tools:checked="true" />
+
+                <TextView
+                    android:id="@+id/checkboxAgreementText"
+                    style="@style/TextRegularStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_6"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/padding_6"
+                    android:paddingBottom="@dimen/padding_6"
+                    android:text="@string/registration_offer_agreement"
+                    android:textSize="@dimen/text_13" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmButton"
+                style="@style/Button.Purple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_24"
+                android:layout_marginBottom="@dimen/margin_24"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/registration_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkboxAgreementLayout" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

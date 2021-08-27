@@ -1,0 +1,111 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Testproject" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/TextSubtitleStyle</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:actionMenuTextColor">@color/colorAccent</item>
+        <item name="android:textCursorDrawable">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="TextSubtitleStyle">
+        <item name="android:textColor">@color/colorTextTitle</item>
+    </style>
+
+    <style name="TextRegularStyle">
+        <item name="android:textColor">@color/colorTextSubtitle</item>
+    </style>
+
+    <style name="TextRegularBoldStyle">
+        <item name="android:textColor">@color/colorTextSubtitle</item>
+    </style>
+
+    <style name="TextTitleStyle">
+        <item name="android:textColor">@color/colorTextTitle</item>
+    </style>
+
+
+    <style name="BaseBottomSheet" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="rippleColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Button.Default" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingBottom">@dimen/padding_16</item>
+        <item name="android:paddingTop">@dimen/padding_16</item>
+    </style>
+
+    <style name="Button.Purple" parent="Button.Default">
+        <item name="android:background">@drawable/button_purple_color_state_list</item>
+    </style>
+
+    <style name="Button.Red" parent="Button.Default">
+        <item name="android:background">@drawable/button_red_color_state_list</item>
+    </style>
+
+    <style name="Button.PurpleStroke" parent="Button.Default">
+        <item name="android:background">@drawable/shape_white_accent_stroke</item>
+    </style>
+
+    <style name="MaterialButton.Purple" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_purple_color_state_list</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingBottom">@dimen/padding_16</item>
+        <item name="android:paddingTop">@dimen/padding_16</item>
+    </style>
+
+    <style name="Button.White" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/shape_white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingBottom">@dimen/padding_16</item>
+        <item name="android:paddingTop">@dimen/padding_16</item>
+    </style>
+
+    <style name="IndigoChipChoiceStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textSize">16sp</item>
+        <item name="chipBackgroundColor">@color/chip_color_state_list</item>
+        <item name="android:textColor">@color/chip_text_color_state_list</item>
+    </style>
+
+    <style name="textDescription">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="textDefault">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet_rounded</item>
+    </style>
+
+</resources>

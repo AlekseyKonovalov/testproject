@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">testproject</string>
+
+
+    <string name="rubles">%s ₽</string>
+    <string name="phone_pattern">+7%s</string>
+    <string name="phone_pattern_without_plus">7%s</string>
+    <string name="version_pattern">%1$s (%2$s)</string>
+
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_description">Введите данные</string>
+    <string name="registration_btn">Зарегистрироваться</string>
+    <string name="registration_offer_agreement">Я соглашаюсь с договором-офертой</string>
+    <string name="registration_offer_agreement_clickable">договором-офертой</string>
+    <string name="registration_inn_hint">Имя</string>
+    <string name="registration_bik_hint">Фамилия</string>
+    <string name="registration_account_hint">Телефон</string>
+
+    <string name="onboarding_title">Как пользоваться</string>
+    <string name="onboarding_skip_text">Пропустить</string>
+    <string name="onboarding_next_text">Далее</string>
+    <string name="onboarding_ok_text">Понятно!</string>
+
+    <string name="text_error_pattern">Поле %s заполнено некорректно</string>
+    <string name="text_default_error">Поле заполнено некорректно</string>
+    <string name="date_validation_error_min_value">Дата не может быть меньше %s</string>
+    <string name="date_validation_error_max_value">Дата не может быть больше %s</string>
+    <string name="date_validation_error_incorrect_value">Введите корректную дату</string>
+    <string name="date_validation_placeholder_text">дд.мм.гггг</string>
+
+    <string name="default_error">Произошла ошибка работы сервиса. Обратитесь в службу поддержки</string>
+
+    <string name="dialog_error_title">УПС</string>
+    <string name="dialog_error_btn">Закрыть</string>
+
+    <string name="default_exit">Выйти</string>
+
+
+    <string name="support_info_title">Контактный номер поддержки</string>
+    <string name="support_info_phone">+7 999 99 99 999</string>
+
+    <string name="additional_title">Дополнительно</string>
+    <string name="additional_requisites">Профиль</string>
+    <string name="additional_instructions">Инструкция</string>
+    <string name="additional_support">Поддержка</string>
+
+    <string name="applications_list_title">Поиск</string>
+    <string name="applications_list_title_btn">Обновить</string>
+    <string name="applications_list_title_search">Найти</string>
+    <string name="applications_list_title_waiting">Одобрено</string>
+    <string name="applications_list_title_signed">Подписано</string>
+    <string name="applications_list_title_rejected">Отказано</string>
+    <string name="applications_list_purchase_amount">сумма чека</string>
+    <string name="applications_list_go_to_payment">Перейти к оплате</string>
+
+
+    <string name="requisites_title">Профиль</string>
+    <string name="requisites_title_change">Изменить</string>
+    <string name="requisites_org_name">Название организации</string>
+
+    <string name="instructions_title">Инструкция</string>
+    <string name="instructions_subtitle">Как пользоваться</string>
+
+    <string name="instructions_onboarding1">instructions onboarding 1</string>
+    <string name="instructions_onboarding2">instructions onboarding 2</string>
+    <string name="instructions_onboarding3">instructions onboarding 3</string>
+    <string name="instructions_onboarding4">instructions onboarding 4</string>
+    <string name="instructions_onboarding5">instructions onboarding 5</string>
+
+    <string name="offer_title">Договор-оферты</string>
+    <string name="offer_document_name">offer.pdf</string>
+
+    <string name="search_empty_error">Ничего не найдено</string>
+</resources>

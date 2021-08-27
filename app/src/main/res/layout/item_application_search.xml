@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/phoneText"
+            style="@style/TextSubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="+7 925 111 22 33" />
+
+        <TextView
+            android:id="@+id/statusText"
+            style="@style/TextSubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ship_cove"
+            android:textSize="@dimen/text_13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneText"
+            tools:text="Одобрена, ожидайте подписания" />
+
+        <TextView
+            android:id="@+id/purchaseAmountText"
+            style="@style/TextTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="121 298.11 ₽" />
+
+
+        <TextView
+            android:id="@+id/purchaseAmountDescriptionText"
+            style="@style/TextSubtitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/applications_list_purchase_amount"
+            android:textColor="@color/ship_cove"
+            android:textSize="@dimen/text_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/purchaseAmountText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/goToPaymentButton"
+            style="@style/TextSubtitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/shape_purple_big_round"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/applications_list_go_to_payment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/statusText"
+            tools:visibility="visible" />
+
+        <View
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/padding_20"
+            android:background="@color/link_water"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/goToPaymentButton" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/border" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

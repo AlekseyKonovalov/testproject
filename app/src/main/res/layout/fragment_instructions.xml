@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data></data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_24"
+            android:paddingTop="@dimen/margin_36"
+            android:paddingEnd="@dimen/padding_10"
+            android:src="@drawable/ic_long_back_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/TextTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/instructions_title"
+            android:textSize="@dimen/text_26"
+            app:layout_constraintStart_toEndOf="@id/backButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/instructionsBody"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textSubTitle"
+                    style="@style/TextTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:text="@string/instructions_subtitle"
+                    android:textColor="@color/ship_cove"
+                    android:textSize="@dimen/text_18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/onboarding1"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    android:backgroundTint="@color/light_blue"
+                    app:cardCornerRadius="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textSubTitle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:src="@drawable/ic_baseline_local_fire_department_24" />
+
+                        <TextView
+                            style="@style/TextTitleStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6"
+                            android:paddingEnd="@dimen/margin_24"
+                            android:text="@string/instructions_onboarding1"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/onboarding2"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    android:backgroundTint="@color/light_pink2"
+                    app:cardCornerRadius="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/onboarding1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:src="@drawable/ic_search" />
+
+                        <TextView
+                            style="@style/TextTitleStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6"
+                            android:paddingEnd="@dimen/margin_24"
+                            android:text="@string/instructions_onboarding2"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/onboarding3"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    android:backgroundTint="@color/light_yellow"
+                    app:cardCornerRadius="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/onboarding2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:src="@drawable/ic_update" />
+
+                        <TextView
+                            style="@style/TextTitleStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6"
+                            android:paddingEnd="@dimen/margin_24"
+                            android:text="@string/instructions_onboarding3"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/onboarding4"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    android:backgroundTint="@color/light_green"
+                    app:cardCornerRadius="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/onboarding3">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:src="@drawable/ic_close" />
+
+                        <TextView
+                            style="@style/TextTitleStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6"
+                            android:paddingEnd="@dimen/margin_24"
+                            android:text="@string/instructions_onboarding4"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/onboarding5"
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_marginStart="@dimen/margin_24"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:layout_marginEnd="@dimen/margin_24"
+                    android:backgroundTint="@color/light_pink2"
+                    app:cardCornerRadius="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/onboarding4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:src="@drawable/ic_baseline_local_fire_department_24" />
+
+                        <TextView
+                            style="@style/TextTitleStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.6"
+                            android:paddingEnd="@dimen/margin_24"
+                            android:text="@string/instructions_onboarding5"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_54"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/onboarding5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

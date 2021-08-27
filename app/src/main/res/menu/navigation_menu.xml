@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/applicationsListFragment"
+        android:icon="@drawable/ic_search_menu"
+        android:title="@string/applications_list_title" />
+    <item
+        android:id="@+id/additionalFragment"
+        android:icon="@drawable/ic_additional_menu"
+        android:title="@string/additional_title" />
+</menu>

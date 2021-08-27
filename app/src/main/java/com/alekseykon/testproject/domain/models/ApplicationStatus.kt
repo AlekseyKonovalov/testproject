@@ -1,0 +1,15 @@
+package com.alekseykon.testproject.domain.models
+
+enum class ApplicationStatus(val labelName: String) {
+    NEW("NEW"),
+    WAIT_APPROVE("WAIT_APPROVE"),
+    APPROVAL_PROCESS_FINISHED("APPROVAL_PROCESS_FINISHED"),
+    SIGNING_PROCESS("SIGNING_PROCESS"),
+    SIGNED("SIGNED"),
+    ACTIVE("ACTIVE"),
+    CANCELLATION_PROCESS("CANCELLATION_PROCESS"),
+    CANCELED("CANCELED"),
+    REJECTED("REJECTED"),
+    ERROR("ERROR"),
+    UNKNOWN_STATUS("UNKNOWN_STATUS")
+}
